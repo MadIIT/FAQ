@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .primary {
+            background:linear-gradient(to bottom,#b4aee8,#ffe3fe);
+            height:100%;
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        html, body {
+            margin:0;
+            height:100%;
+            width:100%;
+        }
+        body {
+            overflow:hidden;
+        }
+        .sec {
+            background-color:black;
+            border-radius:5%;
+            display:inline-block;
+            font-family:Montserrat;
+            color:#7868e6;
+            padding:1%;
+        }
+        .image {
+            height:100px;
+            width:300px;
+            border-radius:5px;
+        }
+        h1 {
+            transition: text-shadow 0.5s;
+        }
+        h1:hover {
+            text-shadow:0 0 3px #a4ebf3,0 0 3px #a4ebf3;
+        }
+        .ans {
+            display:none;
+            margin:0;
+            color:white;
+        }
+    </style>
+</head>
+<body >
+<div class="primary">
+    <div class="sec" align="center">
+<img class="image" src="https://www.crsbis.in/BIS/app_srv/tdc/BISDesign/img/faq-banner.jpg">
+    <h1 class="a">Question 1</h1>
+        <h2 class="ans" id="text1">text</h2>
+    <h1 class="b">Question 2</h1>
+        <h2 class="ans" id="text2">text</h2>
+    <h1 class="c">Question 3</h1>
+        <h2 class="ans" id="text3">text</h2>
+    <h1 class="d">Question 4</h1>
+        <h2 class="ans" id="text4">text</h2>
+    <h1 class="e">Question 5</h1>
+        <h2 class="ans" id="text5">text1</h2>
+    </div>
+</div>
+<script>
+    document.querySelector(".a").addEventListener("click" , one);
+    function one() {
+  var x = document.getElementById("text1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("text2").style.display ="none";
+  document.getElementById("text3").style.display ="none";
+  document.getElementById("text4").style.display ="none";
+  document.getElementById("text5").style.display ="none";
+}
+
+
+
+    document.querySelector(".b").addEventListener("click" , two);
+    function two() {
+  var x = document.getElementById("text2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("text1").style.display ="none";
+  document.getElementById("text3").style.display ="none";
+  document.getElementById("text4").style.display ="none";
+  document.getElementById("text5").style.display ="none";
+}
+
+    document.querySelector(".c").addEventListener("click" , three);
+    function three() {
+  var x = document.getElementById("text3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("text2").style.display ="none";
+  document.getElementById("text1").style.display ="none";
+  document.getElementById("text4").style.display ="none";
+  document.getElementById("text5").style.display ="none";
+}
+
+
+    document.querySelector(".d").addEventListener("click" , four);
+    function four() {
+  var x = document.getElementById("text4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("text2").style.display ="none";
+  document.getElementById("text3").style.display ="none";
+  document.getElementById("text1").style.display ="none";
+  document.getElementById("text5").style.display ="none";
+}
+
+    document.querySelector(".e").addEventListener("click" , five);
+    function five() {
+  var x = document.getElementById("text5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("text2").style.display ="none";
+  document.getElementById("text3").style.display ="none";
+  document.getElementById("text4").style.display ="none";
+  document.getElementById("text1").style.display ="none";
+}
+</script>
+</body>
+</html>
